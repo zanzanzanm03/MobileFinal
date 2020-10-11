@@ -12,7 +12,7 @@ import {
   Button,
 } from 'react-native';
 
-export default class DetailsScreen extends React.Component {
+export default class PackageScreen extends React.Component {
   //Detail Screen to show from any Open detail button
   constructor(props) {
     super(props);
@@ -21,7 +21,7 @@ export default class DetailsScreen extends React.Component {
     };
   }
   componentDidMount() {
-    return fetch('http://192.168.43.7/api_test/select_cus.php')
+    return fetch('http://192.168.43.7/api_test/select_pro.php')
       .then((response) => response.json())
       .then((responseJson) => {
         this.setState({data: responseJson});
@@ -41,16 +41,16 @@ export default class DetailsScreen extends React.Component {
               renderItem={({item}) => (
                 <View
                   style={{
-                    backgroundColor: '#008000',
-                    padding: 20,
-                    margin: 15,
-                    borderRadius: 10,
+                    backgroundColor: '#00BFFF',
+                    padding: 6,
+                    margin: 5,
+                    borderRadius: 5,
                   }}>
                   <Text style={{color: '#fff', fontWeight: 'bold'}}>
-                    {'\t'}CID: {item.CID}
-                    {'\t'}CName: {item.CName}
-                    {'\t'}CTelephone: {item.CTelephone}
-                    {'\t'}CSex: {item.CSex}
+                    {'\t'}ProductID: {item.PID}
+                    {'\t'}ProductName: {item.PName}
+                    {'\t'}ProductPrice: {item.PPrice}
+                    {'\t'}Producthoto: {item.Photo}
                   </Text>
                 </View>
               )}

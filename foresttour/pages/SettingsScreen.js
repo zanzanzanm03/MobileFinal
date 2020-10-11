@@ -1,5 +1,6 @@
 //This is an example code for Bottom Navigation//
 import React from 'react';
+import {Image} from 'react-native';
 //import react in our code.
 import {Text, View, TouchableOpacity, StyleSheet} from 'react-native';
 //import all the basic component we have used
@@ -8,41 +9,23 @@ export default class SettingsScreen extends React.Component {
   //Setting Screen to show in Setting Option
   render() {
     return (
-      <View
-        style={{
-          flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}>
-        <Text
-          style={{
-            marginTop: 50,
-            fontSize: 25,
-          }}>
-          Setting!
+      <View>
+        <Text>
+          วิสาหกิจชุมชนกลุ่มอนุรักษ์ป่าชายเลนบ้านแหลมโฮมสเตย์ รายละเอียด :
+          แหล่งท่องเที่ยวแห่งเดียวที่มีจุดเด่นที่สุดในประเทศ
+          ที่มีการสปาโคลนสดในทะเล
+          ประวัติกลุ่มอนุรักษ์ป่าชายเลนบ้านแหลมโฮมสเตย์ตั้งอยู่ที่ หมู่ 7
+          ต.ท่าศาลา อ.ท่าศาลา
+          จ.นครศรีธรรมราชลักษณะของพื้นที่มีส่วนของผืนดินที่งอกยื่นลงไปในทะเลโดยมีขนาดของพื้นที่เพิ่มขึ้นทุกปี
+          โดยมีพื้นที่ มีขนาดเพิ่มขึ้น ทางชาวบ้าน องค์กร หน่วยงาน และนักเรียน
+          นักศึกษา
+          ได้มีการร่วมกันในการปลูกป่าชายเลนอยู่ทุกๆปีโดยมีการเลือกพันธุ์โกงกางลำพูต้นจากและตลอดจนพันธุ์พืชที่สามารถเจริญงอกงามได้ดีในพื้นที่น้ำกร่อยได้มีการขยายพื้นที่ปลูกอยู่ตลอดทุกปีโดยมีพื้นที่รวมโดยประมาณ
+          5000 กว่าไร่ และมีแนวโน้มเพิ่มขึ้นทุกปี โดยอยู่ในพื้นที่ ของ หมู่ 7
+          และ หมู่ 14 ต.ท่าศาลา อ.ท่าศาลา จ.นครศรีธรรมราช
+          ด้วยลักษณะพื้นที่ดังกล่าวทำให้ชาวบ้านได้รับประโยชน์เป็นแหล่งอาหารเป็นที่อยู่อาศัยของพืชและสัตว์ตามธรรมชาติเพื่อเป็นตัวช่วยป้องกันการกัดเซาะตามแนวชายฝั่งทะเลจาก
+          ป่าโกงกางที่มีส่วนเพิ่มขึ้นทุกปีโดยพื้นที่ดังกล่าวเป็นแหล่งขยายพันธุ์สัตว์น้ำให้กับชาวบ้านในพื้นที่สามารถที่จะมีพันธุ์ปลาเพื่อเป็นแหล่งอาหารตลอดจนสามารถสร้างรายได้ให้กับครอบครัว
+          ได้เป็นอย่างดีทั้งนี้ด้วยประโยชน์ของป่าชายเลนที่มีต่อชุมชนต่อชาวบ้านที่สามารถใช้ประ...
         </Text>
-        <View
-          style={{
-            flex: 1,
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => this.props.navigation.navigate('Home')}>
-            <Text>Go to Home Tab</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => this.props.navigation.navigate('Details')}>
-            <Text>Open Detail Screen</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => this.props.navigation.navigate('Profile')}>
-            <Text>Open Profile Screen</Text>
-          </TouchableOpacity>
-        </View>
       </View>
     );
   }

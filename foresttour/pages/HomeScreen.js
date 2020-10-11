@@ -19,7 +19,7 @@ export default class HomeScreen extends React.Component {
             marginTop: 50,
             fontSize: 25,
           }}>
-          Home!
+          Forest Tour
         </Text>
         <View
           style={{
@@ -29,19 +29,30 @@ export default class HomeScreen extends React.Component {
           }}>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => this.props.navigation.navigate('Settings')}>
-            <Text>Go to settng Tab</Text>
+            onPress={() => this.props.navigation.navigate('Staff')}>
+            <Text>Go to Staff details</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.button}
             onPress={() => this.props.navigation.navigate('Details')}>
-            <Text>Open Details Screen</Text>
+            <Text>GO to Customer Details</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => this.props.navigation.navigate('Package')}>
+            <Text>GO to Package Details</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => this.props.navigation.navigate('Booking')}>
+            <Text>GO to Booking page</Text>
           </TouchableOpacity>
         </View>
       </View>
     );
   }
 }
+
 const styles = StyleSheet.create({
   button: {
     alignItems: 'center',
